@@ -17,6 +17,6 @@ $badword = $_GET['bad'];
 <body>
 <p> <?php echo $string; ?> <?php echo strlen($string);?></p>
 
-    <p> <?php echo str_replace('ulo','***' , $badword); ?> </p>
+    <p> <?php echo str_replace($_GET['bad'],'***' , $badword); ?> </p>
 </body>
 </html>
